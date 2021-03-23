@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+	<h1>Domain Name Generator</h1>
+
+	<div class=button>
+		
+		<button type="button" onclick="prueba()">Random Domain</button>
+	</div>
+	<div class="field">
+		<p id="demo"></p>
+	</div>
+	
+</body>
+</html>
+
+
+<script>
+	
+	let pronoun = ['the','our'];
+  	let adj = ['great', 'big' ];
+  	let noun = ['jogger','racoon'];
+	
+	function prueba() {
+
+			let domain=pronoun[Math.floor(Math.random()*pronoun.length)];
+			let domain2=adj[Math.floor(Math.random()*adj.length)];
+			let domain3=noun[Math.floor(Math.random()*noun.length)];
+		document.getElementById("demo").innerHTML=domain+domain2+domain3+".com";
+	}
+</script>
